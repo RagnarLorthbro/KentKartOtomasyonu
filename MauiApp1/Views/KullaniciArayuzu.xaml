@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiApp1.Views.KullaniciArayuzu"
+             Loaded="ContentPage_Loaded" >
+    <Grid>
+        <Image Source="https://picsum.photos/2000/2000" WidthRequest="960"/>
+        
+        <Frame BackgroundColor="#562b1a" Opacity="0.2"/>
+        <Frame VerticalOptions="Center" HorizontalOptions="Start" HeightRequest="735" CornerRadius="0" WidthRequest="350" BackgroundColor="#bfbdc0" Opacity="0.5"></Frame>
+        <Frame VerticalOptions="Center" HorizontalOptions="End" HeightRequest="735" CornerRadius="0" WidthRequest="350" BackgroundColor="#bfbdc0" Opacity="0.5"></Frame>
+        <Frame VerticalOptions="Start" HorizontalOptions="Center" HeightRequest="20" WidthRequest="1600" CornerRadius="0" BackgroundColor="#562b1a" Opacity="0.9"/>
+        <Frame VerticalOptions="Start" HorizontalOptions="Start" WidthRequest="280" HeightRequest="280" Margin="25" BackgroundColor="SeaGreen" Opacity="0.5"/>
+        <Frame VerticalOptions="Start" HorizontalOptions="Start" WidthRequest="200" Margin="60,40"/>
+        <Frame VerticalOptions="Start" HorizontalOptions="Start" WidthRequest="200" Margin="60,280"/>
+        <Frame VerticalOptions="Start" HorizontalOptions="Start" HeightRequest="200" Margin="40,60"/>
+        <Frame VerticalOptions="Start" HorizontalOptions="Start" HeightRequest="200" Margin="285,60"/>
+        <Frame VerticalOptions="Start" HorizontalOptions="Start" WidthRequest="330" Margin="10,320"/>
+        <Frame VerticalOptions="End" HorizontalOptions="End" WidthRequest="330" Margin="10,320"/>
+
+        <Image Source="https://picsum.photos/600/600" Aspect="AspectFill" VerticalOptions="Start"  HeightRequest="220" WidthRequest="220" HorizontalOptions="Start" Margin="50,50">
+            
+            <Image.Shadow>
+                <Shadow Brush="Black"
+                Offset="10,10"
+                Opacity="0.8" />
+            </Image.Shadow>
+        </Image>
+
+        <Frame VerticalOptions="Start" HorizontalOptions="End" Margin="40,40" BackgroundColor="#627281" WidthRequest="250" Opacity="0.9" CornerRadius="0">
+            <Label Text="Balance :" VerticalOptions="Start" HorizontalOptions="Start" FontFamily="Cascadia Code"/>
+        </Frame>
+        <Entry Margin="50,50" VerticalOptions="Start" HorizontalOptions="End" WidthRequest="140" x:Name="moneybalance" IsReadOnly="True" TextColor="Red"/>
+
+
+        <Frame VerticalOptions="Start" HorizontalOptions="End" Margin="40,100" BackgroundColor="#627281" WidthRequest="250" Opacity="0.9" CornerRadius="0">
+            <Label Text="KenkartId :" VerticalOptions="Start" HorizontalOptions="Start" FontFamily="Cascadia Code"/>
+        </Frame>
+        <Entry x:Name="kenkartId" Margin="50,110" VerticalOptions="Start" HorizontalOptions="End" WidthRequest="140" IsReadOnly="True" TextColor="BurlyWood"/>
+
+
+        <Frame VerticalOptions="Start" HorizontalOptions="End" Margin="40,160" BackgroundColor="#627281" WidthRequest="250" Opacity="0.9" CornerRadius="0">
+            <Label Text="Ad :" VerticalOptions="Start" HorizontalOptions="Start" FontFamily="Cascadia Code"/>
+        </Frame>
+        <Entry x:Name="kullaniciAdi" Margin="50,170" VerticalOptions="Start" HorizontalOptions="End" WidthRequest="140" IsReadOnly="True" TextColor="Black"/>
+
+
+        <Frame VerticalOptions="Start" HorizontalOptions="End" Margin="40,220" BackgroundColor="#627281" WidthRequest="250" Opacity="0.9" CornerRadius="0"> 
+            <Label Text="Soyad :" VerticalOptions="Start" HorizontalOptions="Start" FontFamily="Cascadia Code"/>
+        </Frame>
+        <Entry x:Name="kullaniciSoyadi" Margin="50,230" VerticalOptions="Start" HorizontalOptions="End" WidthRequest="140" IsReadOnly="True" TextColor="Black"/>
+
+
+        <Frame VerticalOptions="Start" HorizontalOptions="End" Margin="40,280" BackgroundColor="#627281" WidthRequest="250" Opacity="0.9" CornerRadius="0">
+            <Label Text="K.Tarihi:" VerticalOptions="Start" HorizontalOptions="Start" FontFamily="Cascadia Code"/>
+        </Frame>
+        <Entry x:Name="kayitTarihi" Margin="50,290" VerticalOptions="Start" HorizontalOptions="End" WidthRequest="140" IsReadOnly="True" TextColor="Black"/>
+
+
+
+        <Button x:Name="buton1" VerticalOptions="End" HorizontalOptions="Start" Margin="40,40" Text="Şifre Değiştir" WidthRequest="250" FontFamily="Cascadia Code" BackgroundColor="#cb8a58" Clicked="Button_Clicked" />
+        <Button x:Name="buton2" VerticalOptions="End" HorizontalOptions="End" Margin="40,100" Text="Bakiye Yükle" WidthRequest="250" FontFamily="Cascadia Code" BackgroundColor="#cb8a58" Clicked="buton2_Clicked" />
+        <Button x:Name="buton3" VerticalOptions="End" HorizontalOptions="End" Margin="40,160" Text="Transfer" WidthRequest="250" FontFamily="Cascadia Code" BackgroundColor="#cb8a58" Clicked="buton3_Clicked" />
+        <Button x:Name="buton4" VerticalOptions="End" HorizontalOptions="End" Margin="40,40" Text="Hakkında" WidthRequest="250" FontFamily="Cascadia Code" BackgroundColor="#cb8a58" Clicked="buton4_Clicked" />
+
+
+        <Frame VerticalOptions="Center" HorizontalOptions="Start" Scale="10"/>
+    </Grid>
+</ContentPage>

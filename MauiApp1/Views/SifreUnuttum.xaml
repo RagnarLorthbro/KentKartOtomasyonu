@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiApp1.Views.SifreUnuttum" >
+    
+     <Grid>
+        <Image Source="kayitol.png" Aspect="AspectFill"/>
+        <Frame VerticalOptions="Start" HorizontalOptions="Center" WidthRequest="400" HeightRequest="500" Margin="0,100" BackgroundColor="#b29f91" Opacity="0.3"/>
+
+        <Entry x:Name="ad" Placeholder="Ad" VerticalOptions="Start" HorizontalOptions="Start" PlaceholderColor="DarkGoldenrod" Margin="640,150" WidthRequest="100" TextColor="Black"/>
+        <Entry x:Name="soyad" Placeholder="Soyad" VerticalOptions="Start" HorizontalOptions="End" PlaceholderColor="DarkGoldenrod" Margin="640,150" WidthRequest="100" TextColor="Black"/>
+        <Entry x:Name="kenkartID" Placeholder="             KenKart-ID" VerticalOptions="Start" HorizontalOptions="Center" PlaceholderColor="DarkGoldenrod" Margin="0,230" WidthRequest="200" TextColor="Black"/>
+        <Entry x:Name="telefonNumarasi" Placeholder="         TelefonNumarası" VerticalOptions="Start" HorizontalOptions="Center" PlaceholderColor="DarkGoldenrod" Margin="0,300" WidthRequest="200" TextColor="Black"/>
+       
+        <Frame VerticalOptions="Start" HorizontalOptions="Center" WidthRequest="400" Margin="0,210"/>
+        <Frame VerticalOptions="Start" HorizontalOptions="Center" WidthRequest="400" Margin="0,140"/>
+        <Frame VerticalOptions="Start" HorizontalOptions="Center" WidthRequest="400" Margin="0,350"/>
+        <Frame VerticalOptions="Start" HorizontalOptions="Center" WidthRequest="400" Margin="0,290"/>
+        <Button VerticalOptions="End" HorizontalOptions="Center" Margin="0,240" WidthRequest="200" Text="Kullanıcı Ara" TextColor="Black" FontAttributes="Bold" BackgroundColor="#cb8a58" x:Name="button1" Clicked="button1_Clicked_1"/>
+    </Grid>
+    
+</ContentPage>

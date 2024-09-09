@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiApp1.Views.SifreDegistir" >
+    <Grid>
+        <Image Source="kayitol.png" Aspect="AspectFill"/>
+        <Frame VerticalOptions="Start" HorizontalOptions="Center" WidthRequest="400" HeightRequest="400" Margin="0,100" BackgroundColor="#b29f91" Opacity="0.3"/>
+
+
+        <Entry x:Name="yenisifre" IsPassword="True" VerticalOptions="Start" HorizontalOptions="Center" WidthRequest="200" Margin="0,200" Placeholder="Şifre" PlaceholderColor="Black"/>
+        <Entry x:Name="yenisifretekrar" IsPassword="True" VerticalOptions="Start" HorizontalOptions="Center" WidthRequest="200" Margin="0,260" Placeholder="Tekrar Aynı Şifre" PlaceholderColor="Black"/>
+        <Frame VerticalOptions="Start" HorizontalOptions="Center" WidthRequest="200" Margin="0,190"/>
+        <Frame VerticalOptions="Start" HorizontalOptions="Center" WidthRequest="200" Margin="0,250"/>
+        <Frame VerticalOptions="Start" HorizontalOptions="Center" WidthRequest="200" Margin="0,320"/>
+        <Frame VerticalOptions="Start" HorizontalOptions="Start" HeightRequest="150" Margin="650,180"/>
+        <Frame VerticalOptions="Start" HorizontalOptions="End" HeightRequest="150" Margin="650,180"/>
+        <Button x:Name="buton" VerticalOptions="Center" HorizontalOptions="Center" WidthRequest="200" BackgroundColor="#cb8a58" TextColor="Black" FontAttributes="Bold" Text="Şifre Değiştir" Clicked="Button_Clicked" />
+
+    </Grid>
+</ContentPage>

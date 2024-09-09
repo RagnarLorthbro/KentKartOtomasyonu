@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiApp1.Views.AnaMenu"
+             Title=""
+             Background="BlanchedAlmond">
+    <ScrollView>
+        
+        <Grid>
+
+            
+            <Image Source="anamenu1.png" Aspect="AspectFill" HeightRequest="1400"/>
+            <Frame VerticalOptions="Start" HorizontalOptions="Center" WidthRequest="400" HeightRequest="500" Margin="0,200" BackgroundColor="#b29f91" Opacity="0.3"/>
+            <Label Text="KentKart Otomasyonu" FontSize="30" Margin="0,80" FontFamily="Comic Sans MS" VerticalOptions="Start" HorizontalOptions="Center"/>
+            <Label Text="Writer by Umutcan Kemahlı" FontFamily="Comic Sans MS"/>
+            <Label Text="beta 0.01" FontFamily="Comic Sans MS" Margin="0,20"/>
+            <Entry x:Name="telefonNumarasi" WidthRequest="200" Placeholder="   Telefon Numarası " PlaceholderColor="Black"  VerticalOptions="Start" HorizontalOptions="Center" Margin="0,250" Scale="1.2" TextColor="Black" />
+            <Entry x:Name="sifre" IsPassword="True" WidthRequest="200" Placeholder="   Şifre " PlaceholderColor="Black"  VerticalOptions="Start" HorizontalOptions="Center" Margin="0,320" Scale="1.2" TextColor="Black"/>
+            <Button VerticalOptions="Start" x:Name="giris" Margin="0,420" WidthRequest="200" HorizontalOptions="Center" Text="Giriş Yap" Clicked="giris_Clicked"  TextColor="Black" BackgroundColor="#627281" FontAttributes="Bold"/>
+            <Button VerticalOptions="Start" x:Name="kayit" Margin="0,480" WidthRequest="200" HorizontalOptions="Center" Text="Kayıt Ol" Clicked="kayit_Clicked"  TextColor="Black" BackgroundColor="#cb8a58" FontAttributes="Bold"/>
+            <Button VerticalOptions="Start" x:Name="sifreUnuttum" Margin="0,540" WidthRequest="200" HorizontalOptions="Center" Text="Sifre Unuttum" Clicked="sifreUnuttum_Clicked"  TextColor="Black" BackgroundColor="#cb8a58" FontAttributes="Bold" />
+            <Button x:Name="hakkinda" VerticalOptions="Start" HorizontalOptions="Center" Margin="0,600" Text="Hakkında" WidthRequest="200" FontFamily="Cascadia Code" BackgroundColor="#cb8a58" Clicked="hakkinda_Clicked" FontAttributes="Bold"/>
+
+
+
+        </Grid>
+        
+    </ScrollView>
+        
+
+</ContentPage>

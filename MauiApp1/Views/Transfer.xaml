@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiApp1.Views.Transfer"
+             Loaded="ContentPage_Loaded">
+    <Grid>
+        <Image Source="https://picsum.photos/0/2000" WidthRequest="1000" HeightRequest="2000"/>
+        <Frame VerticalOptions="Center" HorizontalOptions="Center" WidthRequest="800" HeightRequest="300" Opacity="0.5"/>
+        <Label Text=" HESAPLAR ARASI TRANSFER EKRANI " HorizontalOptions="Center" VerticalOptions="Start" Margin="0,240" FontSize="30" FontAttributes="Bold"/>
+        <Frame HorizontalOptions="Center" VerticalOptions="Start" Margin="0,280" WidthRequest="700"/>
+        <Entry x:Name="girilenKentkartID" HorizontalOptions="Start" VerticalOptions="Start" Margin="420,300" WidthRequest="200" Placeholder="Kent Kart Id" PlaceholderColor="White"/>
+        <Entry x:Name="kullaniciBakiyesi" HorizontalOptions="Center" VerticalOptions="End" Margin="0,230" WidthRequest="150" IsReadOnly="True"/>
+        <Entry x:Name="ad" HorizontalOptions="Start" VerticalOptions="Start" Margin="640,300" WidthRequest="120" Placeholder="Ad" PlaceholderColor="GhostWhite" />
+        <Entry x:Name="soyad" HorizontalOptions="End" VerticalOptions="Start" Margin="620,300" WidthRequest="120" Placeholder="Soyadı" PlaceholderColor="GhostWhite"/>
+        <Button HorizontalOptions="End" VerticalOptions="Start" Margin="450,300" WidthRequest="120" Text="Gönder" FontAttributes="Bold" BackgroundColor="Aqua" Clicked="Button_Clicked"/>
+        <Entry x:Name="gonderlimekİstenenMiktar" HorizontalOptions="Start" VerticalOptions="End" Margin="420,350" WidthRequest="120" Placeholder="Miktar" PlaceholderColor="Red"/>
+        <Label Text="HESAP BAKİYENİZ" HorizontalOptions="Center" VerticalOptions="End" Margin="0,280" FontAttributes="Bold" TextColor="Red"/>
+        <Button VerticalOptions="End" HorizontalOptions="End" Text="Guncelle" WidthRequest="120" Margin="450,340" FontAttributes="Bold" BackgroundColor="Azure" Clicked="Button_Clicked_1"/>
+    </Grid>
+</ContentPage>

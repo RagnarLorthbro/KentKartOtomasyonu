@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiApp1.Views.Hakkında">
+    <Grid>
+        <Image Source="https://picsum.photos/0/2200" WidthRequest="2200" HeightRequest="2200"/>
+        <Frame VerticalOptions="Start" HorizontalOptions="Center" WidthRequest="1000" HeightRequest="600" Opacity="0.8"/>
+        
+        <Label Text="OTOMASYON HAKKINDA VİZYON VE AMAÇLAR " FontSize="40" Margin="320,10" FontAttributes="Italic" TextColor="AntiqueWhite"/>
+        <Label Text="    KenKart Otomasyonu, toplu taşıma sistemlerinde kullanılan kartların yönetimini kolaylaştırmak için geliştirilen bir projedir. Bu sistem, kart sahiplerinin bakiye yükleme, bakiye transferi ve giriş işlemlerini dijital ortamda hızlı ve güvenli bir şekilde yapmalarına olanak tanır. Kullanıcılar, bakiye yükleme işlemiyle kartlarına para aktarabilir, bakiye transferi ile kartlar arasında bakiye aktarımı gerçekleştirebilir ve giriş işlemleri ile sistem üzerinden kolayca toplu taşıma hizmetlerinden yararlanabilir."
+               WidthRequest="500" Margin="0,300"
+               FontAttributes="Italic"/>
+    </Grid>
+</ContentPage>

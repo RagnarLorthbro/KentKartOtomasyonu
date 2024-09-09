@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiApp1.Views.BakiyeYukle" >
+    <Grid>
+        <Image Source="https://picsum.photos/0/2000" WidthRequest="2000" HeightRequest="2000"/>
+        <Frame VerticalOptions="Center" HorizontalOptions="Center" WidthRequest="500" HeightRequest="600" Opacity="0.5" BackgroundColor="Black"/>
+        <Switch x:Name="check" IsToggled="true" VerticalOptions="Start" HorizontalOptions="Start" Margin="690,330"/>
+        <Label Text="Okudum Onaylıyorum :" VerticalOptions="Start" HorizontalOptions="Start" Margin="530,340" FontAttributes="Bold"/>
+        <Entry x:Name="kartNumarası" VerticalOptions="Start" HorizontalOptions="Start" WidthRequest="200" Margin="540,180" Placeholder="Kart Numarası" TextColor="White" PlaceholderColor="White"/>
+        <Frame VerticalOptions="Start" HorizontalOptions="Center" WidthRequest="500" Margin="0,110"/>
+        <Label Text="YÜKLENECEK TUTARI SEÇİNİZ" HorizontalOptions="Center" VerticalOptions="Start" Margin="0,80" FontAttributes="Bold"/>
+        <Frame VerticalOptions="Start" HorizontalOptions="Center" WidthRequest="500" Margin="0,170"/>
+        <RadioButton x:Name="Radiobutton1" VerticalOptions="Start" HorizontalOptions="Start" Margin="540,120" Content="50" TextColor="AliceBlue" CheckedChanged="Radiobutton1_CheckedChanged" GroupName="MyGroup"/>
+        <RadioButton x:Name="Radiobutton2" VerticalOptions="Start" HorizontalOptions="Start" Margin="600,120" Content="100" TextColor="AntiqueWhite" CheckedChanged="Radiobutton1_CheckedChanged" GroupName="MyGroup"/>
+        <RadioButton x:Name="Radiobutton3" VerticalOptions="Start" HorizontalOptions="Start" Margin="660,120" Content="150" TextColor="Aqua" CheckedChanged="Radiobutton1_CheckedChanged" GroupName="MyGroup"/>
+        <RadioButton x:Name="Radiobutton4" VerticalOptions="Start" HorizontalOptions="Start" Margin="720,120" Content="200" TextColor="Aquamarine" CheckedChanged="Radiobutton1_CheckedChanged" GroupName="MyGroup"/>
+        <RadioButton x:Name="Radiobutton5" VerticalOptions="Start" HorizontalOptions="End" Margin="690,120" Content="300" TextColor="Azure" CheckedChanged="Radiobutton1_CheckedChanged" GroupName="MyGroup"/>
+        <RadioButton x:Name="Radiobutton6" VerticalOptions="Start" HorizontalOptions="End" Margin="620,120" Content="500" TextColor="Beige" CheckedChanged="Radiobutton1_CheckedChanged" GroupName="MyGroup"/>
+        <RadioButton x:Name="Radiobutton7" VerticalOptions="Start" HorizontalOptions="End" Margin="540,120" Content="1000" TextColor="Bisque" CheckedChanged="Radiobutton1_CheckedChanged" GroupName="MyGroup"/>
+        <Label VerticalOptions="Start" HorizontalOptions="Start" Margin="540,240" Text="Son Kullanma Tarihi" FontAttributes="Bold"/>
+        <Picker x:Name="ayPicker" VerticalOptions="Start" HorizontalOptions="Start" Margin="540,260" >
+            <Picker.Items>
+                <x:String>Ocak</x:String>
+                <x:String>Şubat</x:String>
+                <x:String>Mart</x:String>
+                <x:String>Nisan</x:String>
+                <x:String>Mayıs</x:String>
+                <x:String>Haziran</x:String>
+                <x:String>Temmuz</x:String>
+                <x:String>Ağustos</x:String>
+                <x:String>Eylül</x:String>
+                <x:String>Ekim</x:String>
+                <x:String>Kasım</x:String>
+                <x:String>Aralık</x:String>
+            </Picker.Items>
+        </Picker>
+
+        <Picker x:Name="yilPicker" VerticalOptions="Start" HorizontalOptions="Start" Margin="660,260" >
+            <Picker.Items>
+                <x:String>2024</x:String>
+                <x:String>2025</x:String>
+                <x:String>2026</x:String>
+                <x:String>2027</x:String>
+                <x:String>2028</x:String>
+                <x:String>2029</x:String>
+                <x:String>2030</x:String>
+                <x:String>2031</x:String>
+                <x:String>2032</x:String>
+                <x:String>2033</x:String>
+                <x:String>2034</x:String>
+                <x:String>2035</x:String>
+                <x:String>2036</x:String>
+                <x:String>2037</x:String>
+                <x:String>2038</x:String>
+            </Picker.Items>
+        </Picker>
+
+        <Label Text="Cvv" Margin="670,240" VerticalOptions="Start" HorizontalOptions="End"/>
+        <Entry HorizontalOptions="End" VerticalOptions="Start" Margin="620,260" WidthRequest="80" x:Name="cvv"/>
+        <Frame VerticalOptions="Start" HorizontalOptions="Center" WidthRequest="500" Margin="0,310"/>
+        <Button VerticalOptions="End" HorizontalOptions="Center" Margin="0,200" WidthRequest="200" BackgroundColor="Wheat" Text="Bakiye Yükle" FontAttributes="Bold" Clicked="Button_Clicked"/>
+        
+
+    </Grid>
+</ContentPage>
